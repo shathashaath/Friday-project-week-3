@@ -12,18 +12,19 @@ html {
   max-width: 30%;
   position: absolute;
   margin-top: auto;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  z-index: 1; }
 
 .box, .contents .content-1, .contents .content-2, .contents .content-3, .contents .content-4 {
   background-color: #ddeeee;
   color: #e69500;
-  border: 1px solid;
   margin-top: 2%;
   height: 15vh;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  border-radius: 10px; }
   .box:last-child, .contents .content-1:last-child, .contents .content-2:last-child, .contents .content-3:last-child, .contents .content-4:last-child {
     margin-right: 0; }
 
