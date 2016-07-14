@@ -1,51 +1,60 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+
+$margin-top: 3%;
+$header-margin:4%;
 .images{
   position: relative;
   overflow: hidden;
 }
 
+//colors
+$blue:lighten(#99cccc,20%);
+$orange:darken(orange,5%);
+
 .logo{
   max-width: 30%;
   position: absolute;
-  left: 2%;
-  border: 2px dotted springgreen;
-  // background-color: pink;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
 .box{
-  background-color: orange;
-  color:white;
-  border: 1px solid black;
+  background-color: $blue;
+  color: $orange;
+  border: 1px solid ;
   margin-top: 2%;
-  height: 10vh;
+  height: 15vh;
   @include span-columns(3);
 }
   .main-header{
     .images {
       @include span-columns(12);
       width: 100%;
-      border: 4px solid red;
       height: 30vh;
     }
     .main {
       @include span-columns(12);
       max-width: 100%;
-      height: 30vw;
+      height: 30vh;
     }
   .header {
-  color:red;
   @include span-columns(12);
-  border: 1px solid black;
+  text-transform: uppercase;
+  color: gray;
+  font-family: $helvetica;
+  font-weight: normal;
+
   }
   .navbar{
     @include span-columns(12);
-    border: 1px solid black;
+    margin-top: $margin-top;
   }
   li{
     display: inline-block;
     list-style: none;
     padding: 0.5%;
-    border-left: 2px solid gray;
+    border-left: 1px solid gray;
  }
   a{
     text-decoration: none;
@@ -53,16 +62,14 @@
 }
 .second-header{
   @include span-columns(12);
-  border: 1px solid black;
   background-color: #f04f23;
   width: 100%;
   color: white;
   text-align: center;
+  text-transform: uppercase;
 }
 .contents{
     @include span-columns(12);
-    border: 1px solid black;
-
 
   .content-1{
     @extend .box;
@@ -76,4 +83,8 @@
   .content-4{
     @extend .box;
   }
+}
+.cirlce-imgaes{
+  width: 100%;
+  margin-top: $margin-top;
 }
