@@ -1,0 +1,58 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+.box{
+  background-color: orange;
+  color:white;
+  border: 1px solid black;
+  margin-top: 2%;
+  height: 10vh;
+  @include span-columns(3);
+
+}
+  .main-header{
+  img{
+  @include span-columns(12);
+  width: 100%;
+  border: 1px solid red;
+  height: 30vw;
+  }
+  .header {
+  color:red;
+  @include span-columns(12);
+  border: 1px solid black;
+  }
+  .navbar{
+    @include span-columns(12);
+    border: 1px solid black;
+  }
+  li{
+    display: inline-block;
+  }
+}
+.second-header{
+  @include span-columns(12);
+  border: 1px solid black;
+  background-color: #f04f23;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.contents{
+    @include span-columns(12);
+    border: 1px solid black;
+
+
+  .content-1{
+    @extend .box;
+  }
+  .content-2{
+    @extend .box;
+  }
+  .content-3{
+    @extend .box;
+  }
+  .content-4{
+    @extend .box;
+  }
+}
