@@ -2,6 +2,8 @@ footer{
   background-color:lighten(gray, 20%);
   height: 40vh;
   margin-top: 5%;
+  @include social-icons;
+  position: relative;
   .cirlce6 {
       width: 100%;
   }

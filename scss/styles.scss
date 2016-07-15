@@ -5,17 +5,22 @@
 @import 'helpers/mixins';
 @import 'layout/footer';
 @import 'components/media';
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
 }
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
+
 .box {
     background-color: $blue;
     color: $orange;
-    margin-top: 2%;
+    margin-top: 0.3%;
     height: 20vh;
     @include span-columns(3);
     @include border-radius(10px);
@@ -48,12 +53,13 @@ section.main-header {
         text-transform: uppercase;
         color: gray;
         font-family: 'Amatic SC', cursive;
-        font-size: 2.5em;
+        font-size: 2em;
         margin-left: 3%;
     }
     nav.navbar {
         @include span-columns(12);
     }
+
     li {
         display: inline-block;
         list-style: none;
@@ -62,7 +68,7 @@ section.main-header {
     }
     a {
         text-decoration: none;
-        color: black;
+        color: #f04f23;
         font-family: $helvetica;
         text-transform: uppercase;
         font-weight: bold;
