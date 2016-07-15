@@ -7,6 +7,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+footer {
+  background-color: #b3b3b3;
+  height: 40vh; }
+  footer .cirlce6 {
+    width: 100%; }
+  footer p {
+    color: white; }
+
 body {
   margin: 0; }
 
@@ -26,9 +34,17 @@ body {
   border-radius: 10px;
   border-top-style: solid;
   border-bottom-style: solid;
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center;
+  margin: 1%; }
   .box:last-child, .contents .content-1:last-child, .contents .content-2:last-child, .contents .content-3:last-child, .contents .content-4:last-child {
     margin-right: 0; }
+
+div h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center; }
 
 section.main-header {
   float: left;
@@ -52,8 +68,8 @@ section.main-header {
     width: 100%;
     text-transform: uppercase;
     color: gray;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-weight: normal; }
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em; }
     section.main-header div.header:last-child {
       margin-right: 0; }
   section.main-header nav.navbar {
@@ -69,7 +85,11 @@ section.main-header {
     padding: 0.5%;
     border-left: 1px solid gray; }
   section.main-header a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 section.second-header {
   float: left;
@@ -152,13 +172,5 @@ section.row3 {
     max-width: 100%;
     width: 50vw;
     height: 50vh; }
-
-footer {
-  background-color: #b3b3b3;
-  height: 40vh; }
-  footer .cirlce6 {
-    width: 100%; }
-  footer p {
-    color: white; }
 
 /*# sourceMappingURL=styles.css.map */

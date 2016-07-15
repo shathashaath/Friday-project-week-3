@@ -3,6 +3,10 @@
 @import 'neat/neat';
 @import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'layout/footer';
+@import 'components/media';
+
+
 
 body{
   margin: 0;
@@ -19,6 +23,14 @@ body{
     @include span-columns(3);
     @include border-radius(10px);
     font-size: 1em;
+    text-align: center;
+    margin: 1%;
+}
+ div h3{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
 }
 section.main-header {
   @include span-columns(12);
@@ -30,8 +42,8 @@ section.main-header {
         @include span-columns(12);
         text-transform: uppercase;
         color: gray;
-        font-family: $helvetica;
-        font-weight: normal;
+        font-family: 'Amatic SC', cursive;
+        font-size: 2.5em;
     }
     nav.navbar {
         @include span-columns(12);
@@ -44,6 +56,10 @@ section.main-header {
     }
     a {
         text-decoration: none;
+        color:black;
+        font-family: $helvetica;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 }
 section.second-header {
@@ -105,16 +121,4 @@ section.row3 {
     width: 50vw;
     height: 50vh;
   }
-}
-footer{
-  background-color:lighten(gray, 20%);
-  height: 40vh;
-  .cirlce6 {
-      width: 100%;
-      // margin-top: $margin-top;
-  }
-  p{
-    color:white;
-  }
-
 }
