@@ -9,11 +9,14 @@ html {
 
 footer {
   background-color: #b3b3b3;
-  height: 40vh; }
+  height: 40vh;
+  margin-top: 5%; }
   footer .cirlce6 {
     width: 100%; }
   footer p {
-    color: white; }
+    color: white;
+    font-weight: bolder;
+    margin-left: 2%; }
 
 body {
   margin: 0; }
@@ -40,11 +43,21 @@ body {
   .box:last-child, .contents .content-1:last-child, .contents .content-2:last-child, .contents .content-3:last-child, .contents .content-4:last-child {
     margin-right: 0; }
 
+.container-img, section.row1 div img, section.row2 div img, section.row3 img {
+  max-width: 100%;
+  width: 50vw;
+  height: 50vh;
+  border: 5px solid #ecc8d6;
+  border-radius: 10px;
+  border-top-style: solid;
+  border-bottom-style: solid; }
+
 div h3 {
   font-family: 'Noto Sans', sans-serif;
   font-size: 0.9em;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  color: #ff577b; }
 
 section.main-header {
   float: left;
@@ -69,7 +82,8 @@ section.main-header {
     text-transform: uppercase;
     color: gray;
     font-family: 'Amatic SC', cursive;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    margin-left: 3%; }
     section.main-header div.header:last-child {
       margin-right: 0; }
   section.main-header nav.navbar {
@@ -100,7 +114,9 @@ section.second-header {
   width: 100%;
   color: white;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 3%;
+  font-family: 'Poiret One', cursive; }
   section.second-header:last-child {
     margin-right: 0; }
 
@@ -128,10 +144,6 @@ section.row1 {
     width: 48.82117%; }
     section.row1 div:last-child {
       margin-right: 0; }
-    section.row1 div img {
-      max-width: 100%;
-      width: 50vw;
-      height: 50vh; }
 
 section.row2 {
   max-width: 1200px;
@@ -148,10 +160,6 @@ section.row2 {
     width: 31.76157%; }
     section.row2 div:last-child {
       margin-right: 0; }
-    section.row2 div img {
-      max-width: 100%;
-      width: 50vw;
-      height: 50vh; }
 
 section.row3 {
   max-width: 1200px;
@@ -168,9 +176,5 @@ section.row3 {
     width: 48.82117%; }
     section.row3 div:last-child {
       margin-right: 0; }
-  section.row3 img {
-    max-width: 100%;
-    width: 50vw;
-    height: 50vh; }
 
 /*# sourceMappingURL=styles.css.map */
