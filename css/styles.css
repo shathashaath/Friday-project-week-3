@@ -4,16 +4,8 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.images {
-  position: relative;
-  overflow: hidden; }
-
-.logo {
-  max-width: 30%;
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
-  z-index: 1; }
+body {
+  margin: 0; }
 
 .box, .contents .content-1, .contents .content-2, .contents .content-3, .contents .content-4 {
   background-color: #ddeeee;
@@ -28,52 +20,48 @@ html {
   .box:last-child, .contents .content-1:last-child, .contents .content-2:last-child, .contents .content-3:last-child, .contents .content-4:last-child {
     margin-right: 0; }
 
-.main-header .images {
+section.main-header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  width: 100%;
-  height: 30vh; }
-  .main-header .images:last-child {
+  width: 100%; }
+  section.main-header:last-child {
     margin-right: 0; }
-.main-header .main {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  max-width: 100%;
-  height: 30vh; }
-  .main-header .main:last-child {
-    margin-right: 0; }
-.main-header .header {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  text-transform: uppercase;
-  color: gray;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: normal; }
-  .main-header .header:last-child {
-    margin-right: 0; }
-.main-header .navbar {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-top: 3%; }
-  .main-header .navbar:last-child {
-    margin-right: 0; }
-.main-header li {
-  display: inline-block;
-  list-style: none;
-  padding: 0.5%;
-  border-left: 1px solid gray; }
-.main-header a {
-  text-decoration: none; }
+  section.main-header img.main {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    width: 100%; }
+    section.main-header img.main:last-child {
+      margin-right: 0; }
+  section.main-header div.header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-transform: uppercase;
+    color: gray;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-weight: normal; }
+    section.main-header div.header:last-child {
+      margin-right: 0; }
+  section.main-header nav.navbar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section.main-header nav.navbar:last-child {
+      margin-right: 0; }
+  section.main-header li {
+    display: inline-block;
+    list-style: none;
+    padding: 0.5%;
+    border-left: 1px solid gray; }
+  section.main-header a {
+    text-decoration: none; }
 
-.second-header {
+section.second-header {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -83,18 +71,59 @@ html {
   color: white;
   text-align: center;
   text-transform: uppercase; }
-  .second-header:last-child {
+  section.second-header:last-child {
     margin-right: 0; }
 
 .contents {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .contents:last-child {
-    margin-right: 0; }
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .contents::after {
+    clear: both;
+    content: "";
+    display: block; }
 
-.cirlce-imgaes {
+section.row1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  section.row1::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section.row1 div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    section.row1 div:last-child {
+      margin-right: 0; }
+    section.row1 div img {
+      max-width: 100%;
+      width: 50vw;
+      height: 50vh; }
+
+section.row2 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  section.row2::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section.row2 div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.row2 div:last-child {
+      margin-right: 0; }
+    section.row2 div img {
+      max-width: 100%;
+      width: 50vw;
+      height: 50vh; }
+
+.cirlce6 {
   width: 100%;
   margin-top: 3%; }
 
