@@ -1,0 +1,19 @@
+.box {
+    background-color: $blue;
+    color: $orange;
+    margin-top: 0.3%;
+    height: 25vh;
+    @include span-columns(3);
+    @include border-radius(10px);
+    font-size:18px;
+    text-align: center;
+    margin: 1%;
+    overflow: hidden;
+}
+.container-img {
+    max-width: 100%;
+    width: 50vw;
+    height: 50vh;
+    border: $border;
+    @include border-radius(10px);
+}

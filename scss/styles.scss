@@ -3,38 +3,11 @@
 @import 'neat/neat';
 @import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'helpers/extends';
+@import 'layout/header';
 @import 'layout/footer';
 @import 'components/media';
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-body {
-    margin: 0;
-}
 
-.box {
-    background-color: $blue;
-    color: $orange;
-    margin-top: 0.3%;
-    height: 20vh;
-    @include span-columns(3);
-    @include border-radius(10px);
-    font-size: 1em;
-    text-align: center;
-    margin: 1%;
-}
-.container-img {
-    max-width: 100%;
-    width: 50vw;
-    height: 50vh;
-    border: $border;
-    @include border-radius(10px);
-}
 div h3 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 0.9em;
@@ -42,38 +15,7 @@ div h3 {
     text-align: center;
     color: #ff577b;
 }
-section.main-header {
-    @include span-columns(12);
-    img.main {
-        @include span-columns(12);
-        width: 100%;
-    }
-    div.header {
-        @include span-columns(12);
-        text-transform: uppercase;
-        color: gray;
-        font-family: 'Amatic SC', cursive;
-        font-size: 2em;
-        margin-left: 3%;
-    }
-    nav.navbar {
-        @include span-columns(12);
-    }
 
-    li {
-        display: inline-block;
-        list-style: none;
-        padding: 0.5%;
-        border-left: 1px solid gray;
-    }
-    a {
-        text-decoration: none;
-        color: #f04f23;
-        font-family: $helvetica;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-}
 section.second-header {
     @include span-columns(12);
     background-color: #d62c6d;
@@ -85,6 +27,7 @@ section.second-header {
     font-family: 'Poiret One', cursive;}
 .contents {
     @include outer-container;
+
     .content-1 {
         @extend .box;
     }
@@ -105,6 +48,7 @@ section.row1 {
         img {
             @extend .container-img;
         }
+
     }
 }
 section.row2 {
@@ -113,9 +57,15 @@ section.row2 {
         @include span-columns(4);
         img {
             @extend .container-img;
+              @media screen and (max-width: 500px){
+                float: right;
+              }
+            }
         }
+
     }
-}
+
+
 section.row3 {
     @include outer-container;
     div {

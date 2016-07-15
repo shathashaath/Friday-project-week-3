@@ -1,0 +1,35 @@
+section.main-header {
+    @include span-columns(12);
+    img.main {
+        @include span-columns(12);
+        width: 100%;
+    }
+    div.header {
+        @include span-columns(12);
+        text-transform: uppercase;
+        color: gray;
+        font-family: 'Amatic SC', cursive;
+        font-size: 2em;
+        margin-left: 3%;
+    }
+    nav.navbar {
+        @include span-columns(12);
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 0.5%;
+        border-left: 1px solid gray;
+        @media screen and (max-width: 500px){
+          display: none;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #f04f23;
+        font-family: $helvetica;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
