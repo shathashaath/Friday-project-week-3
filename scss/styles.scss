@@ -8,16 +8,17 @@ body{
   margin: 0;
 }
 .container{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .box {
     background-color: $blue;
     color: $orange;
     margin-top: 2%;
-    height: 15vh;
+    height: 20vh;
     @include span-columns(3);
     @include border-radius(10px);
+    font-size: 1em;
 }
 section.main-header {
   @include span-columns(12);
@@ -47,7 +48,7 @@ section.main-header {
 }
 section.second-header {
   @include span-columns(12);
-    background-color: #e7c4bc;
+    background-color:#d62c6d;
     width: 100%;
     color: white;
     text-align: center;
@@ -94,7 +95,26 @@ section.row2 {
 
   }
 }
-.cirlce6 {
-    width: 100%;
-    margin-top: $margin-top;
+section.row3 {
+  @include outer-container;
+  div{
+    @include span-columns(6);
+  }
+  img{
+    max-width: 100%;
+    width: 50vw;
+    height: 50vh;
+  }
+}
+footer{
+  background-color:lighten(gray, 20%);
+  height: 40vh;
+  .cirlce6 {
+      width: 100%;
+      // margin-top: $margin-top;
+  }
+  p{
+    color:white;
+  }
+
 }
