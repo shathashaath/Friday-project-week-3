@@ -19,7 +19,7 @@ For this project, we were instructed to create a page template using Sass.The we
 
 Install my cupcake page, The PCH, locally by cloning this repository:
 
-https://github.com/shathashaath/Code-Review-Sass.git
+https://github.com/shathashaath/Friday-project-week-3
 
 Feel free to contact me regarding project or make changes to page.
 
